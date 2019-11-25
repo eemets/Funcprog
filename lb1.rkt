@@ -1,0 +1,10 @@
+(define A 1)
+(define B 2)
+(define C 3)
+(define D 4)
+(define X (/ (* (EXPT (SIN A) 3)
+                (EXPT (COS B) 2))
+             (+ (EXP C)
+                 1
+                (SIN D)))
+  )

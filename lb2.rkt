@@ -1,0 +1,18 @@
+(define a 11)
+(define b 21)
+(define c 31)
+(define m 41)
+(define V1 5)
+(define V2 7)
+(define (V i)
+  ( if (= i 1)
+       V1
+       ( if (= i 2)
+            V2
+            (modulo (+ (* a (V(- i 1)))
+                       (* b (V(- i 2)))
+                       c)
+                     m)
+            )
+       )
+  )
